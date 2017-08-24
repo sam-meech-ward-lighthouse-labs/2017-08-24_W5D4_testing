@@ -12,7 +12,10 @@
 		222DD1C61F4F334F00082C57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222DD1C41F4F334F00082C57 /* Main.storyboard */; };
 		222DD1C81F4F334F00082C57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222DD1C71F4F334F00082C57 /* Assets.xcassets */; };
 		222DD1CB1F4F334F00082C57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222DD1C91F4F334F00082C57 /* LaunchScreen.storyboard */; };
-		222DD1D61F4F334F00082C57 /* MusicSomethingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DD1D51F4F334F00082C57 /* MusicSomethingTests.swift */; };
+		222DD1E11F4F336000082C57 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DD1E01F4F336000082C57 /* Song.swift */; };
+		222DD1E41F4F346C00082C57 /* SongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DD1E31F4F346C00082C57 /* SongTests.swift */; };
+		222DD1E61F4F38C700082C57 /* SongManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DD1E51F4F38C700082C57 /* SongManager.swift */; };
+		222DD1E81F4F39FF00082C57 /* SongsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DD1E71F4F39FF00082C57 /* SongsManagerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +37,12 @@
 		222DD1CA1F4F334F00082C57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		222DD1CC1F4F334F00082C57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		222DD1D11F4F334F00082C57 /* MusicSomethingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicSomethingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		222DD1D51F4F334F00082C57 /* MusicSomethingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicSomethingTests.swift; sourceTree = "<group>"; };
 		222DD1D71F4F334F00082C57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		222DD1E01F4F336000082C57 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		222DD1E21F4F346C00082C57 /* MusicSomethingTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicSomethingTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		222DD1E31F4F346C00082C57 /* SongTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTests.swift; sourceTree = "<group>"; };
+		222DD1E51F4F38C700082C57 /* SongManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongManager.swift; sourceTree = "<group>"; };
+		222DD1E71F4F39FF00082C57 /* SongsManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +86,8 @@
 			children = (
 				222DD1C01F4F334F00082C57 /* AppDelegate.swift */,
 				222DD1C21F4F334F00082C57 /* ViewController.swift */,
+				222DD1E01F4F336000082C57 /* Song.swift */,
+				222DD1E51F4F38C700082C57 /* SongManager.swift */,
 				222DD1C41F4F334F00082C57 /* Main.storyboard */,
 				222DD1C71F4F334F00082C57 /* Assets.xcassets */,
 				222DD1C91F4F334F00082C57 /* LaunchScreen.storyboard */,
@@ -90,8 +99,10 @@
 		222DD1D41F4F334F00082C57 /* MusicSomethingTests */ = {
 			isa = PBXGroup;
 			children = (
-				222DD1D51F4F334F00082C57 /* MusicSomethingTests.swift */,
 				222DD1D71F4F334F00082C57 /* Info.plist */,
+				222DD1E31F4F346C00082C57 /* SongTests.swift */,
+				222DD1E71F4F39FF00082C57 /* SongsManagerTests.swift */,
+				222DD1E21F4F346C00082C57 /* MusicSomethingTests-Bridging-Header.h */,
 			);
 			path = MusicSomethingTests;
 			sourceTree = "<group>";
@@ -149,6 +160,7 @@
 					};
 					222DD1D01F4F334F00082C57 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						TestTargetID = 222DD1BC1F4F334F00082C57;
 					};
 				};
@@ -197,7 +209,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				222DD1E11F4F336000082C57 /* Song.swift in Sources */,
 				222DD1C31F4F334F00082C57 /* ViewController.swift in Sources */,
+				222DD1E61F4F38C700082C57 /* SongManager.swift in Sources */,
 				222DD1C11F4F334F00082C57 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,7 +220,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				222DD1D61F4F334F00082C57 /* MusicSomethingTests.swift in Sources */,
+				222DD1E81F4F39FF00082C57 /* SongsManagerTests.swift in Sources */,
+				222DD1E41F4F346C00082C57 /* SongTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,10 +393,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MusicSomethingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.meech-ward.MusicSomethingTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicSomethingTests/MusicSomethingTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MusicSomething.app/MusicSomething";
@@ -393,10 +411,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MusicSomethingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.meech-ward.MusicSomethingTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicSomethingTests/MusicSomethingTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MusicSomething.app/MusicSomething";

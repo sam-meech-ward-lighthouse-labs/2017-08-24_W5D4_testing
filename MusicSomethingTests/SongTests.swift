@@ -1,5 +1,5 @@
 //
-//  MusicSomethingTests.swift
+//  SongTests.swift
 //  MusicSomethingTests
 //
 //  Created by Sam Meech-Ward on 2017-08-24.
@@ -7,9 +7,10 @@
 //
 
 import XCTest
+
 @testable import MusicSomething
 
-class MusicSomethingTests: XCTestCase {
+class SongTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,16 +22,15 @@ class MusicSomethingTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func test_Song_Init_PropertiesGetSetCorrectly() {
+        let bass = 4.0
+        let title = "Shwifty"
+        let druation = Double(arc4random_uniform(100))
+        
+        let song = Song(bass: bass, title: title, duration: druation)
+        
+        XCTAssertEqual(song.bass, bass)
+        XCTAssertEqual(song.title, title)
+        XCTAssertEqual(song.duration, druation)
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }
